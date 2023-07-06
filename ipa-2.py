@@ -64,26 +64,6 @@ def caesar_cipher(message, shift):
     '''
     # Replace `pass` with your code.
     # Stay within the function. Only use the parameters as input. The function should return your answer.
-def caesar_cipher(message, shift):
-    '''Caesar Cipher.
-    10 points.
-
-    Apply a shift number to a string of uppercase English letters and spaces.
-
-    Parameters
-    ----------
-    message: str
-        a string of uppercase English letters and spaces.
-    shift: int
-        the number by which to shift the letters.
-
-    Returns
-    -------
-    str
-        the message, shifted appropriately.
-    '''
-    # Replace `pass` with your code.
-    # Stay within the function. Only use the parameters as input. The function should return your answer.
     alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     caesar_cipher = ""
 

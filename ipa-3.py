@@ -119,16 +119,16 @@ def tic_tac_toe(board):
     
     for row in board:
         if all(XO == row[0] for XO in row):
-            return row[0] + " wins"
+            return row[0]
     
     for col in range(size):
         if all(board[row][col] == board[0][col] for row in range(size)):
-            return board[0][col] + " wins"
+            return board[0][col] 
     
     if all(board[i][i] == board[0][0] for i in range(size)):
-        return board[0][0] + " wins"
+        return board[0][0] 
     
     if all(board[i][size-i-1] == board[0][size-1] for i in range(size)):
-        return board[0][size-1] + " wins"
+        return board[0][size-1]
     
     return "NO WINNER"

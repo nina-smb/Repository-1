@@ -118,17 +118,17 @@ def tic_tac_toe(board):
     size = len(board)
     
     for row in board:
-        if all(XO == row[0] for XO in row):
+        if all(XO == row[0] and XO!="" for XO in row):
             return row[0]
     
     for col in range(size):
-        if all(board[row][col] == board[0][col] for row in range(size)):
+        if all(board[row][col] == board[0][col] and board[row][col]!="" for row in range(size)):
             return board[0][col] 
     
-    if all(board[i][i] == board[0][0] for i in range(size)):
+    if all(board[i][i] == board[0][0] and board[i][i] !="" for i in range(size)):
         return board[0][0] 
     
-    if all(board[i][size-i-1] == board[0][size-1] for i in range(size)):
+    if all(board[i][size-i-1] == board[0][size-1] and board[i][size-i-1]!="" for i in range(size)):
         return board[0][size-1]
     
     return "NO WINNER"
